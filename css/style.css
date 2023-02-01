@@ -1,0 +1,246 @@
+
+
+
+
+/*Recuerdo que, como he hecho en los .html, evitaré repetirme en los comentarios. */
+/*He ordenador cada estilo según lo he ido utilizando o añadiendo. Empiezo con la pestaña index */
+
+
+
+
+body{ /* En el body he deja especificado el fondo que voy a utilizar, con un color de fondo por si acaso, e indicaciones sobre la fuente del texto  */
+    background-image: url(../assets/images/fondooscuro.jpg);/*Imagen de fondo. */
+    background-repeat: no-repeat; /*Que la imagen no se repita y aparezca solo una vez */
+    background-size: cover; /*Que la imagen ocupe toda la página */
+    background-color: rgb(37, 35, 35); /*Color del fondo. */
+    color: blanchedalmond; /*Color del texto para toda la página*/
+    font-family: 'Courier New', Courier, monospace; /*Fuente de las letras */
+}
+
+.container{
+    width: 98%; /*Ancho de la capa. Como quiero que sea una página grande, solo la he menguado un poco con respecto al body */
+    height: 100%; /*Alto de la capa. Pongo el 100% para que la capa se haga más grande según se vaya añadiendo contenido.  */
+    margin: 0px auto; /*Margen exterior de la capa. Para que me la centre */
+    padding: 10px;
+    border-bottom: 1px solid blanchedalmond; /*Hace referencia a la línea que aparece abajo del todo de la página. */
+
+}
+
+@font-face { /* Con font-face declaro las fuentes que voy a utilizar, en esta página serán 3. */
+    font-family: CandyCane;
+    src: url(../assets/fonts/CandyCane.ttf);
+}
+@font-face {
+    font-family:Mothership;
+    src: url(../assets/fonts/Mothership.ttf);
+}
+@font-face {
+    font-family:Chocolate_covered;
+    src: url(../assets/fonts/Chocolate\ Covered\ Raindrops\ BOLD.ttf);
+}
+
+.titulo{
+    font-family: CandyCane; /* Elijo la fuente que voy a utilizar. Es una de las declaradas anteriormente. */
+    text-align: center; /*Alinea el texto al centro*/
+    font-size: 2em; /*Aporta tamaño a la fuente. El em depende del tamaño de la fuente del contenedor.  */
+    border-bottom: 1px solid blanchedalmond;
+    padding: 0px 10px 10px;
+    letter-spacing: 1px; /*Para dar espacio entre las letras. */
+}
+
+.main{
+    padding: 10px;
+}
+
+.texto_simple {
+    text-align: justify; /*Alineación del texto justificada. */
+    padding: 10px 10px 30px;
+}
+
+.t_negrita{
+    text-align: justify;
+    padding: 0px 10px 30px;
+    border-bottom: 1px solid blanchedalmond;
+    font-weight: bold; /*Texto en negrita */
+}
+
+.texto_simple2 {
+    text-align: justify;
+    padding: 10px 10px 30px;
+    border-bottom: 1px solid blanchedalmond;
+}
+
+.section{
+    padding: 10px;
+    border-bottom: 1px solid blanchedalmond;
+    /*display: inline-block;*/
+}
+
+.art_carb{
+    width: 350px; /*Ancho de pestaña en píxeles */
+    padding: 10px 25px 10px; /*top-lados-button */
+    display: inline-block; /*Para que los elementos en bloque se conviertan en elementos en línea. */
+}
+.titulo_art{
+    text-align: center; /*Texto alineado en el centro */
+    text-decoration: underline; /*Subrayado */
+    padding-left: 20px; /*Añade espacio en el interior de la capa, pero solo el lado izquierdo */
+}
+
+ .texto_art{
+    text-align: justify;
+    padding: 10px 10px 30px;
+ }
+
+.art_princ{
+    width: 350px;
+    padding: 10px 20px 10px;
+    display: inline-block;
+    vertical-align:top; /* Para que las capas queden alineadas en la parte superior. */
+    border-left: 1px solid blanchedalmond; /*Borde al lado izquierdo */
+}
+
+.img{
+    width: 350px; /*ancho de la imagen */
+}
+
+.footer{
+    width: 100%; /*Para que ocupe todo el ancho de la capa que lo contiene */
+    height: 130px;/*El alto en consonancia con lo que ocupa el contenido. */
+    display: inline-block;
+    vertical-align:top;
+}
+
+.enlaces_footer{
+    display: inline-block;
+    text-align: left; /*Para que aparezca la referencia en el lado izquierdo*/
+    width: 200px;
+    height: 100px; /*Las dimensiones deben ajustarse para que no choquen con las de los enlaces y aparezcan unos al lado del otro. */
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+.enlace{
+    display: inline-block;
+    color: rgb(233, 209, 173);
+    text-align: left;
+    width: 200px;
+    height: 20px;
+    padding-top: 10px;
+    font-size: 1.2rem; /*El rem hace referencia al tamaño de la fuente del navegador */
+    font-family: Chocolate_covered; /*Utilizo otra fuente de las 3 que se declararon */
+    font-style: oblique; /*Para que este tipo de letra aparezca en cursiva */
+    word-spacing: 3px; /*Espacio entre palabras */
+    letter-spacing: 2px;
+}
+
+.texto_footer{
+    display: inline-block;
+    vertical-align:top;
+    width: 400px;
+    padding: 10px 20px 10px;
+    margin-left: 480px;
+    margin-top: 45px;
+    text-align: right;
+    font-size: 1em;
+    font-family: Chocolate_covered;
+    font-style: oblique;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+
+
+
+/*Hasta aquí están las etiquetas del index. Las siguientes irán apareciendo según la pestaña, pero todas comparten las del footer del index. */
+
+.t_mayus{ /*Aplicada en la pestaña de carbohidratos */
+    text-align: justify;
+    padding: 0px 10px 30px;
+    border-bottom: 1px solid blanchedalmond;
+    font-variant: small-caps; /*Para que aparezca en mayúsculas pequeñas. */
+    font-size: 1.2rem;
+}
+
+.art_carb_pest1{ /*Aplicada en carbohidratos, proteinas y grasas*/
+    width: 450px;
+    padding: 10px 20px 40px 25px;
+    margin-right: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align:top;
+}
+
+.art_carb_pest2{/*Aplicada en carbohidratos, proteinas y grasas*/
+    width: 450px;
+    height: 400px;
+    padding: 10px 100px 10px 50px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align:top;
+    border-left:1px solid blanchedalmond;
+}
+
+.foto_fondocarb{
+    background-image: url(../assets/images/posicarb.jpg); /*Referencio la imagen que hará de fondo */
+    background-size: cover; /*Quiero que cubra la capa completa */
+    background-position: center; /*Y quiero que se quede centrada, me interesa la parte central de la imagen */
+    position: absolute; /*Tipo absoluto para que se pueda escribir encima con un texto relativo */
+    width: 500px;
+    height: 280px;
+    margin-bottom: 20px;
+}
+
+.foto_fondoprot{
+    background-image: url(../assets/images/proteinaposi.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.foto_fondogras{
+    background-image: url(../assets/images/posigras.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 520px;
+    height: 310px;
+    margin-bottom: 20px;
+}
+
+.texto_art2{/*Aplicada en carbohidratos, proteinas y grasas*/
+    background-color: rgba(0, 0, 0, 0.404); /*el rgba aplica transparencia, vas subiendo o bajando la última indicación según la opacidad que necesites */
+    text-align: justify;
+    position: relative; /*Para que el texto se situe encima de la imagen */
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.art_bajo{/*Aplicada en carbohidratos, proteinas y grasas*/
+    display: inline-block;
+    width: 1000px;
+    margin-left: 30px;
+    padding: 20px 10px 20px 130px ;
+    display: inline-block;
+    vertical-align:top;
+    border-top: 1px solid blanchedalmond;
+}
+
+.texto_foto{/*Aplicada en carbohidratos, proteinas y grasas*/
+    text-align: justify;
+    padding: 10px 10px 30px;
+}
+
+.foto{/*Aplicada en carbohidratos, proteinas y grasas*/
+    width: 700px;
+    padding-left: 100px;
+}
+
+.texto_art_bajo{/*Aplicada en carbohidratos, proteinas y grasas*/
+    text-align: justify;
+    padding-right: 90px;
+    padding-left: 50px;
+}

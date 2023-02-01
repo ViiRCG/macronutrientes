@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--He puesto todos los estilos en el mismo documento para intentar reciclar código para el resto de pestañas.-->
+    <title>Macronutrientes</title>
+    <!--Quiero que en la pestaña aparezca el nombre de cada viñeta-->
+</head>
+
+<body>
+    <div class="container">
+        <!--Capa contenedora donde estará estructurado todo el proyecto-->
+        <header class="titulo">
+            <h1 id="principal">MACRONUTRIENTES</h1>
+            <!--He identificado los comienzos con un id 
+                para poder realizar luego los enlaces en la misma página.-->
+        </header>
+        <main class="main">
+            <div>
+                <!--Corresponde con la introducción a cada pestaña-->
+                <p class="texto_simple">Los <u>macronutrientes</u> son aquellas sustancias que <strong>proporcionan
+                        energía al
+                        organismo</strong> para un buen funcionamiento, y otros elementos necesarios para <em>reparar y
+                        construir estructuras orgánicas, para promover el crecimiento y para regular procesos
+                        metabólicos.</em> </p>
+                <!--He indicado los elementos de mayor importancia del tecto con strong, em y u. Mientras que en el siguiente párrafo
+                solo he resaltado el texto en negrita al tratarse de los tipos de los que voy a hablar.-->
+                <p class="t_negrita">Los macronutrientes están constituidos por: Carbohidratos, proteinas y grasas.</p>
+            </div>
+            <section class="section">
+                <!--Contenido grueso de las páginas.-->
+                <article class="art_carb">
+                    <!--He utilizado articulos porque van a estar compuestos por 
+                    encabezado texto y pie (aunque he utilizado etiquedas diferentes para variar)-->
+                    <h2 class="titulo_art">CARBOHIDRATOS</h2>
+                    <p class="texto_art">Los carbohidratos son moléculas de <u>azúcar</u>. Junto con las proteínas y las
+                        grasas, los carbohidratos son uno de los tres nutrientes principales que se encuentran en
+                        alimentos y bebidas. </p>
+                    <!--Párrafo de definición-->
+                    <img src="assets/images/CarbosPrinc.jpg" class="img">
+                    <!--Img para añadir imagen de los alimentos.-->
+                    <button><a href="carbohidratos.html" target="_blank">Ir a CARBOHIDRATOS</a></button>
+                    <!--Enlace para ir a otra pestaña pulsando el botón. 
+                    Se repite en el resto de articles referenciados a sus correspondientes páginas-->
+                </article>
+                <article class="art_princ">
+                    <!--En este artículo he puesto una clase distinta porque deberé aplicar estilos distintos a este y el siguiente article-->
+                    <h2 class="titulo_art">PROTEINAS</h2>
+                    <!--El caso de los títulos es un claro ejemplo del reciclado de código, al aplicar la misma clase y estilos en todos los títulos-->
+                    <p class="texto_art">Las proteínas son moléculas formadas por <u>aminoácidos</u> que están unidos
+                        por un
+                        tipo de enlaces conocidos como enlaces peptídicos. Están compuestas por: carbono, hidrógeno,
+                        oxígeno, nitrógeno.</p>
+                    <img src="assets/images/ProtePrinc.png" class="img">
+                    <button><a href="proteinas.html" target="_blank">Ir a PROTEINAS</a></button>
+                </article>
+                <article class="art_princ">
+                    <h2 class="titulo_art">GRASAS</h2>
+                    <p class="texto_art">Las grasas son <u>nutrientes que dan energía</u>. Las grasas tienen 9 calorías
+                        en cada
+                        gramo. Las grasas ayudan en la absorción de las vitaminas A, D, E y K que se disuelven en grasa.
+                    </p>
+                    <img src="assets/images/GrasPrinc.jpg" class="img">
+                    <button><a href="grasas.html" target="_blank">Ir a GRASAS</a></button>
+                </article>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <!--Último apartado, abajo del todo, donde aparecerán los enlaces y la referencia a su creador-->
+            <div class="enlaces_footer">
+                <!--Necesito un div para poder ajustar le tamaño de esta capa y, así, 
+                ésta y la capa de "texto_footer" queden alineadas en medio del "footer" y a cada lado del mismo.-->
+                <a class="enlace" href="https://www.fundaciondiabetes.org/infantil/202/macronutrientes"
+                    target="_blank">Ir a fuente web.</a>
+                <!--Enlace externo-->
+                <a class="enlace" href="#principal">Subir</a>
+                <!--Utilizo el asterisco para indicar que ese id se encuentra en esta misma página.-->
+                <a class="enlace" href="mailto:correo@macronutrientes.com">correo@macronutrientes.com</a>
+                <!--Para enviar un correo electrónico a la dirección indicada.-->
+            </div>
+            <p class="texto_footer">
+                Elaborado por Virginia Chico González. 1º DAW.
+            </p>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>

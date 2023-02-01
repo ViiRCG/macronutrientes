@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Carbohidratos</title>
+    <!--Voy a evitar repetir las explicaciones indicadas en el archivo index.html para no ser repetitiva, pero indicaré cada cambio o añadido con respecto al mismo.-->
+</head>
+
+<body>
+    <div class="container">
+        <header class="titulo">
+            <h1 id="carbohidratos">CARBOHIDRATOS</h1>
+            <!--Cambio el nombre del id para el enlace interno en el footer-->
+            <button><a href="index.html" target="_blank">Ir a PÁGINA PRINCIPAL</a></button>
+            <button><a href="proteinas.html" target="_blank">Ir a PROTEINAS</a></button>
+            <button><a href="grasas.html" target="_blank">Ir a GRASAS</a></button>
+            <!--He creado estos botones para dirigirnos pulsando al botón a la pestaña que deseamos visitar. Cada uno con su ruta referenciada dentro de la carpeta en la que se encuentra.-->
+
+        </header>
+        <main class="main">
+            <div>
+                <p class="texto_simple">
+                    Los <strong>carbohidratos</strong> son moléculas de azúcar. Junto con las proteínas y las grasas,
+                    los carbohidratos son
+                    uno de los tres nutrientes principales que se encuentran en alimentos y bebidas. Su cuerpo
+                    descompone
+                    los carbohidratos en <u>glucosa</u>. La glucosa, o azúcar en la sangre, es la <u>principal fuente de
+                        energía</u> para
+                    las células, tejidos y órganos del cuerpo.
+
+                </p>
+                <p class="t_mayus"> La glucosa puede usarse inmediatamente o almacenarse en el
+                    hígado y los músculos para su uso posterior.
+                    Los tres tipos principales son: <strong>Azúcares, fibra y almidones.</strong></p>
+            </div>
+            <section class="section">
+                <article class="art_carb_pest1">
+                    <!--Aunque en este documendo también he realizado una section con varios artículos, he tenido que darles clases diferentes para las pestañas de Carbohidratos, proteinas y grasas porque tendrán una distribución diferente.-->
+                    <h2 class="titulo_art">Lista de alimentos con carbohidratos: </h2>
+                    <ul>
+                        <!--Incorporo la etiqueta ul para que me genere una lista con puntos (sin numerar)-->
+                        <li>Granos: Pan, pasta, arroz...</li>
+                        <!--li para el formato lista, una etiqueta para cada línea.-->
+                        <li>Frutas.</li>
+                        <li>Productos lácteos.</li>
+                        <li>Legumbres.</li>
+                        <li>Dulces.</li>
+                        <li>Refrescos y zumos azucarados.</li>
+                        <li>Verduras con almidón: Patatas, maíz, guisantes...</li>
+                    </ul>
+                </article>
+                <article class="art_carb_pest2">
+                    <h2 class="titulo_art">¿Es seguro comer una dieta baja en carbohidratos?</h2>
+                    <div class="foto_fondocarb">
+                        <!--añado este div para poder incluir una imagen de fondo sobre la que escribiré el texto de después.-->
+                        <p class="texto_art2">Algunas personas siguen una dieta baja en carbohidratos para tratar
+                            de
+                            bajar de peso. Esto generalmente significa comer 25 gramos y 150 gramos de carbohidratos por
+                            día. Este tipo de dieta puede ser segura, pero <u>debe hablar con su profesional de la
+                                salud</u> antes
+                            de comenzar. Un problema con las dietas bajas en carbohidratos es que <em>pueden limitar la
+                                cantidad
+                                de fibra</em> que obtiene cada día. También pueden ser difíciles de seguir a largo
+                            plazo.</p>
+                    </div>
+                </article>
+                <article class="art_bajo">
+                    <h2 class="texto_foto">Debemos priorizar la ingesta de carbohidratos del tipo <strong>COMPLEJOS:
+                        </strong></h2>
+                    <img src="assets/images/foto_carb.jpg" class="foto">
+                    <!--Esta imagen no será para que tenga texto encima, a diferencia de la comentada anteriormente (línea: <div class="foto_fondocarb">)-->
+                    <p class="texto_art_bajo">Los alimentos que contienen carbohidratos complejos suministran
+                        <strong>vitaminas
+                            y minerales que son importantes para la salud de una persona</strong>. La mayoría de la
+                        ingesta de
+                        carbohidratos debe provenir de los carbohidratos complejos (almidones) y azúcares naturales en
+                        lugar de azúcares procesados y refinados.
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">
+            <!--Esta estructura para el footer se mantendrá para todas las pestañas,cambiando las web y la referencia para subir-->
+            <div class="enlaces_footer">
+                <a class="enlace" href="https://medlineplus.gov/spanish/carbohydrates.html" target="_blank">Ir a fuente
+                    web de "Carbohidratos"</a>
+                <a class="enlace" href="#carbohidratos">Subir</a>
+                <a class="enlace" href="mailto:correo@macronutrientes.com">correo@macronutrientes.com</a>
+            </div>
+            <p class="texto_footer">
+                Elaborado por Virginia Chico González. 1º DAW.
+            </p>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
